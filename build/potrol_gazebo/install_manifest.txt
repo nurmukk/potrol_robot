@@ -1,0 +1,8 @@
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/launch/mehmat_world.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/launch/potrol_sim_ackermann.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/launch/potrol_sim_diff_drive.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/launch/empty_world.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/launch/parkovka_world.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/worlds/farm.world
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/worlds/mehmat.world
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_gazebo/share/potrol_gazebo/worlds/parkovka.world

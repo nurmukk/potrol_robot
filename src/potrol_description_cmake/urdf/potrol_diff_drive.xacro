@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+        <robot name="potrol"  xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="base2.xacro"/>
+    <xacro:include filename="camera.xacro"/>
+    <xacro:include filename="lidar_gazebo.xacro"/>
+    <xacro:include filename="ros2_control_diff_drive.xacro"/>
+    <!-- <xacro:include filename="camera2.xacro"/> -->
+
+</robot>

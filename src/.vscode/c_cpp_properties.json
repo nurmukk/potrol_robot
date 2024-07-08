@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/nurmukk/Nurmukhan/ros2_project/youtube_project/install/box_bot_photo/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/ackermann_steering_controller/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/ackermann-steering-controller-ros2/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_bringup/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_description_cmake/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_gazebo/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_hardware/include/**",
+        "/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_navigation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

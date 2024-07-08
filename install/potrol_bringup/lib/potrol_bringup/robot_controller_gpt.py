@@ -1,0 +1,1 @@
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_bringup/src/robot_controller_gpt.py

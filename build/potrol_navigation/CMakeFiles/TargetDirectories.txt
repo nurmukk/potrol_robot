@@ -1,0 +1,9 @@
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/install/strip.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/install/local.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/install.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/list_install_components.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/rebuild_cache.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/edit_cache.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/test.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/potrol_navigation_uninstall.dir
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_navigation/CMakeFiles/uninstall.dir

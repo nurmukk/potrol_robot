@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<robot name="potrol"  xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <ros2_control name="GazeboSystem" type="system">
+      <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      </hardware>      
+        <xacro:macro name="wheel" params="name">
+          <joint name="wheel_${name}_joint">
+            <command_interface name="velocity">
+              <param name="min">-5</param>
+              <param name="max">5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+          </joint>
+        </xacro:macro>
+        
+        <xacro:wheel name="forward_right" /> 
+        <xacro:wheel name="forward_left" /> 
+        <xacro:wheel name="back_right" /> 
+        <xacro:wheel name="back_left" /> 
+
+        <!-- <joint name="wheel_forward_right_joint">
+            <command_interface name="velocity">
+              <param name="min">-5</param>
+              <param name="max">5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+          </joint>
+
+          <joint name="wheel_forward_left_joint">
+            <command_interface name="velocity">
+              <param name="min">-5</param>
+              <param name="max">5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+          </joint>
+          
+          <joint name="wheel_backward_right_joint">
+            <command_interface name="velocity">
+              <param name="min">-5</param>
+              <param name="max">5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+          </joint>
+          
+          <joint name="wheel_backward_left_joint">
+            <command_interface name="velocity">
+              <param name="min">-5</param>
+              <param name="max">5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+          </joint> -->
+          
+    </ros2_control>
+
+     <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control" >
+          <parameters>$(find potrol_bringup)/config/controller_configuration_diff_drive.yaml</parameters>
+        </plugin>
+      </gazebo> 
+
+</robot>

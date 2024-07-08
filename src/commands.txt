@@ -1,0 +1,167 @@
+git add \ 
+306_300_map_save.pgm             build/ \
+306_300_map_save.yaml            install/ \
+306_300_map_serialize.data       log/ \
+306_300_map_serialize.posegraph  src/ \
+
+
+
+# создать пакет
+ros2 pkg create potrol_hardware \
+--build-type ament_cmake \
+--dependencies rclpy xacro builtin_interfaces controller_interface geometry_msgs hardware_interface nav_msgs pluginlib rclcpp rclcpp_lifecycle realtime_tools tf2 tf2_msgs 
+
+ros2 pkg create cs_description \
+--build-type ament_cmake \
+--dependencies rclpy xacro rclcpp tf2 tf2_msgs
+
+
+ros2 pkg create \
+--build-type ament_python \
+potrol_description
+
+ros2 pkg create --build-type ament_cmake potrol_gazebo
+
+ros2 pkg create --build-type ament_cmake potrol_bringup \
+--dependencies rclpy xacro urdf robot_state_publisher
+
+install(DIRECTORY <папка1 папка2 папка3 ...>
+  DESTINATION share/${PROJECT_NAME})
+
+ros2 + yolov5
+
+$ros2 launch urdf_example rsp_sim.launch.py 
+$ ros2 run yolov5_ros yolov5_ros
+
+
+ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:='xacro /home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_description_cmake/urdf/potrol.xacro'
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/box_bot_1/cmd_vel
+
+
+#комптын пароль:
+nurmukk0402
+
+Ctrl+Alt+T #Terminal ашылады
+
+sudo apt update && sudo apt upgrade -y 
+#пароль сұраса қайтадан nurmukk0402 жазасын
+
+https://www.youtube.com/watch?v=k3jAHxAd8-M
+#осы видео бойынша жасау керек, 9 значный кодты маған айтасын
+
+
+роботтын пароль:
+182764125216
+
+роботка тоже самое
+
+
+
+ros2 run your_package_name your_node_name --ros-args --params-file path/to/your/config/controller.yaml
+
+
+
+# для запуска potrol в газибо
+ros2 launch potrol_gazebo potrol_sim.launch.py
+
+# для запуска robot_state_publisher, joint_state_publisher, rviz spawn_potrol
+ros2 launch potrol_description_cmake state_joint_publisers.launch.py
+
+
+ros2 topic pub /joint_trajectory_controller/joint_trajectory \
+trajectory_msgs/JointTrajectory "\
+{ \
+  joint_names: ['wheel_connect_frame_forward_left_joint', 'wheel_connect_frame_forward_right_joint'], \
+  points: [{ \
+    positions: [1.0, 2.0], \
+    
+    time_from_start: {sec: 1, nanosec: 500000000} \
+  }] \
+}"
+
+
+ros2 topic pub /position_controller/commands std_msgs/msg/Float64MultiArray "data: ["0.5", "0.5"]"
+
+ros2 topic pub /velocity_controller/commands std_msgs/msg/Float64MultiArray "data: ["0.5", "0.5", "0.5", "0.5"]"
+
+
+# launch yolov8 with gazebo
+ros2 launch yolov8_bringup yolov8.launch.py input_image_topic:=/camera/image_raw device:=cpu
+
+# launch yolov8 with realsense 
+ros2 launch yolov8_bringup yolov8.launch.py input_image_topic:=/camera/color/image_raw device:=cpu
+
+ros2 pkg create potrol_navigation \
+--build-type ament_cmake \
+--dependencies rclpy rclcpp slam_toolbox geometry_msgs nav_msgs pluginlib realtime_tools tf2 tf2_msgs 
+
+
+ros2 run nav2_map_server map_saver_cli -f farm_map
+------------------------------------------------------------------------------------------------------------------
+# запустить газибо и farm world
+ros2 launch potrol_gazebo farm_world.launch.py 
+
+# запуск robot с управлением  
+ros2 launch potrol_gazebo potrol_sim_diff_drive.launch.py 
+
+# запуск yolov8 
+cd Nurmukhan/ros2_project/yolov8_ros2/
+source install/setup.bash
+ros2 launch yolov8_bringup yolov8.launch.py input_image_topic:=/camera/image_raw device:=cpu model:=yolov8m.pt
+ros2 launch yolov8_bringup yolov8.launch.py input_image_topic:=/camera/image_raw device:=cpu model:=best.pt
+
+/home/nurmukk/Downloads/garbage12/weights/best.pt
+
+
+------------------------------------------------------------------------------------------------------------------
+# запуск yolov8 3d
+cd Nurmukhan/ros2_project/yolov8_ros2/
+source install/setup.bash
+ros2 launch yolov8_bringup yolov8_3d.launch.py input_image_topic:=/camera/image_raw device:=cpu model:=yolov8m.pt input_points_topic:=/camera/points target_frame:=camera_link_optical 
+
+----------------------------------------------------------------------------------
+#diff_drive
+/cmd_vel                      # nav2
+/diff_cont/cmd_vel_out        # just output
+/diff_cont/cmd_vel_unstamped  # potrol_robot
+
+ros2 launch potrol_gazebo mehmat_world.launch.py
+
+ros2 launch potrol_gazebo potrol_sim_diff_drive.launch.py 
+
+ros2 launch nav2_bringup localization_launch.py map:=/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/306_300_map_save.yaml use_sim_time:=true
+
+# amcl initial pose
+
+ros2 launch nav2_bringup navigation_launch.py param_file:=/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_navigation/config/nav2_params.yaml use_sim_time:=true map_subscribe_transient_local:=true
+
+ros2 launch twist_mux twist_mux_launch.py config_topics:=/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_bringup/config/twist_mux.yaml cmd_vel_out:=/diff_cont/cmd_vel_unstamped
+
+
+-----------------------------------------------------------------------------------
+#ackermann
+
+
+ros2 launch urdf_tutorial display.launch.py model:=/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_description_cmake/urdf/potrol_ackermann.xacro
+
+
+
+--------------------------------------------------------
+metal113_jpeg.rf.5c7edc349dba1b51d8cfebcf3740890a.jpg
+
+flipped_h_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6.jpg
+flipped_h_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6.txt
+rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_180.0.jpg
+rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_180.0.txt
+rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_270.0.jpg
+rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_270.0.txt
+rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_90.0.jpg
+rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_90.0.txt
+
+
+
+cp /home/nurmukk/dataset_to_augmantation/results/flipped_h_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard
+cp /home/nurmukk/dataset_to_augmantation/results/rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_90.0.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard
+cp /home/nurmukk/dataset_to_augmantation/results/rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_180.0.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard
+cp /home/nurmukk/dataset_to_augmantation/results/rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_270.0.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard

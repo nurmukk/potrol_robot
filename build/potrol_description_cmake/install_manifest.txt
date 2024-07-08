@@ -1,0 +1,27 @@
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/launch/potrol_diff_drive_robot.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/launch/state_joint_publisers_diff_drive.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/launch/robot_state_publisher.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/launch/state_joint_publisers_ackermann.launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/ackermann_steering2.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/ros2_control.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/potrol_ackermann.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/ros2_control_diff_drive.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/base.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/ackermann_steering.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/base_wheels.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/potrol_diff_drive.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/potrol_diff_drive.urdf
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/camera.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/ros2_control copy.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/camera2.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/agro_robot.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/lidar_gazebo.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/urdf/base2.xacro
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/potrol_frame_v2.dae
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/wheel.dae
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/connnect_frame.dae
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/policebot_v4.stl
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/ZED2i.stl
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/robo_frame.dae
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/meshes/robo_frame.stl
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_description_cmake/share/potrol_description_cmake/rviz/urdf.rviz

@@ -1,0 +1,1 @@
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_hardware/ament_cmake_core/potrol_hardwareConfig-version.cmake

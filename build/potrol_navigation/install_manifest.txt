@@ -1,0 +1,8 @@
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/config/map.rviz
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/config/mapper_params_online_async.yaml
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/config/mapper_params_localization.yaml
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/config/nav2_params.yaml
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/launch/navigation_launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/launch/localization_launch.py
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/launch/controller_server
+/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/launch/online_async_launch.py

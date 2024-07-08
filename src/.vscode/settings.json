@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/build/turtlebot3_teleop",
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/install/turtlebot3_teleop/lib/python3.8/site-packages",
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/build/turtlebot3_example",
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/install/turtlebot3_example/lib/python3.8/site-packages",
+        "/home/nurmukk/Nurmukhan/ros2_project/youtube_project/install/box_bot_photo/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/build/turtlebot3_teleop",
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/install/turtlebot3_teleop/lib/python3.8/site-packages",
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/build/turtlebot3_example",
+        "/home/nurmukk/Nurmukhan/ros2_project/turtlebot3/install/turtlebot3_example/lib/python3.8/site-packages",
+        "/home/nurmukk/Nurmukhan/ros2_project/youtube_project/install/box_bot_photo/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
