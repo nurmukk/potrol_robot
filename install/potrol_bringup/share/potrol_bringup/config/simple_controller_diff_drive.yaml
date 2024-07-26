@@ -1,1 +1,32 @@
-/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_bringup/config/simple_controller_diff_drive.yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_cont: 
+      type: diff_drive_controller/DiffDriveController
+    
+
+velocity_controller:
+  ros__parameters:
+    joints:
+      - wheel_forward_left_joint
+      - wheel_forward_right_joint
+      - wheel_backward_left_joint
+      - wheel_backward_right_joint
+    interface_name: velocity
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+# # верятность косу 
+
+# # txt файлды агайға жиберу
+
+# # 16 - 8 ге азайту 
+# # запуск жасау
+

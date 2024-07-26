@@ -1,1 +1,2 @@
-/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/build/potrol_description_cmake/ament_cmake_environment_hooks/local_setup.dsv
+source;share/potrol_description_cmake/environment/ament_prefix_path.sh
+source;share/potrol_description_cmake/environment/path.sh

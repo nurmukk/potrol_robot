@@ -156,7 +156,7 @@ def generate_launch_description():
         # gazebo_start_world,
         # gui_arg,
         # model_arg,
-        # rviz_arg,
+        rviz_arg,
         # joint_state_publisher_node,
         # joint_state_publisher_gui_node,
         # robot_state_publisher_node,

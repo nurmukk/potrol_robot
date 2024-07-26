@@ -1,8 +1,4 @@
-git add \ 
-306_300_map_save.pgm             build/ \
-306_300_map_save.yaml            install/ \
-306_300_map_serialize.data       log/ \
-306_300_map_serialize.posegraph  src/ \
+git add 306_300_map_save.pgm build/ 306_300_map_save.yaml install/ 306_300_map_serialize.data 306_300_map_serialize.posegraph  src/ 
 
 
 
@@ -165,3 +161,27 @@ cp /home/nurmukk/dataset_to_augmantation/results/flipped_h_cardboard75_jpg.rf.5e
 cp /home/nurmukk/dataset_to_augmantation/results/rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_90.0.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard
 cp /home/nurmukk/dataset_to_augmantation/results/rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_180.0.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard
 cp /home/nurmukk/dataset_to_augmantation/results/rotated_cardboard75_jpg.rf.5e3c4c88760dd64d35985bc94401bbc6_270.0.jpg /home/nurmukk/Nurmukhan/diploma/img/cardboard
+
+
+### we need to install some ros packages and requirments
+
+  #### xacro
+  sudo apt install ros-humble-xacro
+
+  #### controller_interface
+  sudo apt install ros-humble-controller-interface
+
+  #### slam_toolbox
+  sudo apt install ros-humble-slam-toolbox
+
+  #### realtime_tools
+  sudo apt install ros-humble-realtime-tools
+
+  #### gazebo
+  sudo apt install ros-humble-gazebo-ros ros-humble-gazebo-ros2-control ros-humble-gazebo-ros-pkgs
+
+  #### urdf_tutorial
+  sudo apt install ros-humble-urdf-tutorial
+
+  #### type_of_controllers
+  sudo apt install ros-humble-joint-state-broadcaster ros-humble-forward-command-controller

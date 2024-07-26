@@ -1,1 +1,112 @@
-/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/src/potrol_bringup/config/controller_configuration.yaml
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    velocity_controller:
+      type: forward_command_controller/ForwardCommandController
+
+position_controller:
+  ros__parameters:
+    joints:
+      - wheel_connnect_frame_forward_left_joint
+      - wheel_connnect_frame_forward_right_joint
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+velocity_controller:
+  ros__parameters:
+    joints:
+      - wheel_forward_left_joint
+      - wheel_forward_right_joint
+      - wheel_backward_left_joint
+      - wheel_backward_right_joint
+    interface_name: velocity
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+
+
+# controller_manager:
+#   ros__parameters:
+#     update_rate: 100 #hz
+
+#     # joint_trajectory_controller:
+#     #   type: joint_trajectory_controller/JointTrajectoryController
+    
+#     # joint_velocity_controller:
+#     #   type: joint_trajectory_controller/JointTrajectoryController
+
+#     velocity_controller:
+#       type: velocity_controllers/JointGroupVelocityControllerd
+
+#     position_controller:
+#       type: position_controllers/JointGroupPositionController
+    
+#     joint_state_broadcaster:
+#       type: joint_state_broadcaster/JointStateBroadcaster
+
+    
+# position_controller:
+#   ros__parameters:
+#     joints:
+#       - wheel_connnect_frame_forward_left_joint
+#       - wheel_connnect_frame_forward_right_joint
+
+# velocity_controller:
+#   ros__parameters:
+#     joints:
+#       - wheel_forward_right_joint
+#       - wheel_forward_left_joint
+#       - wheel_backward_right_joint
+#       - wheel_backward_left_joint
+
+
+
+
+# # joint_trajectory_controller:
+# #   ros__parameters:
+# #     joints:
+# #       - wheel_connnect_frame_forward_left_joint
+# #       - wheel_connnect_frame_forward_right_joint
+# #     interface_name: position
+# #     command_interfaces:
+# #       - position
+# #     state_interfaces:
+# #       - position
+# #       - velocity
+
+# # joint_velocity_controller:
+# #   ros__parameters:
+# #     joints:
+# #       - wheel_forward_right_joint
+# #       - wheel_forward_left_joint
+# #       - wheel_backward_right_joint
+# #       - wheel_backward_left_joint
+# #     interface_name: velocity
+# #     command_interfaces:
+# #       - velocity
+# #     state_interfaces:
+# #       - position
+# #       - velocity
+
+
+
+# # верятность косу 
+
+# # txt файлды агайға жиберу
+
+# # 16 - 8 ге азайту 
+# # запуск жасау
+

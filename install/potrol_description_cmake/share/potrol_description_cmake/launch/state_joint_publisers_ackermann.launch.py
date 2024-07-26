@@ -10,7 +10,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
     portol_description_path = get_package_share_path('potrol_description_cmake')
-    urdf_tutorial_path = get_package_share_path('urdf_tutorial')
+    # urdf_tutorial_path = get_package_share_path('urdf_tutorial')
     
     default_model_path = portol_description_path / 'urdf/potrol_ackermann.xacro'
     default_rviz_config_path = '/home/nurmukk/Nurmukhan/ros2_project/potrol_robot/install/potrol_navigation/share/potrol_navigation/config/map.rviz'

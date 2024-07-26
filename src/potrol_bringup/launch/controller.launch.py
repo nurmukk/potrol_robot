@@ -19,31 +19,31 @@ def generate_launch_description():
 
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
-        executable="spawner.py",
+        executable="spawner",
         arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
     )
 
     # robot_controller_spawner = Node(
     #     package="controller_manager",
-    #     executable="spawner.py",
+    #     executable="spawner",
     #     arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
     # )
 
     # velocity_controller_spawner = Node(
     #     package="controller_manager",
-    #     executable="spawner.py",
+    #     executable="spawner",
     #     arguments=["joint_velocity_controller", "-c", "/controller_manager"],
     # )
 
     robot_controller_spawner = Node(
         package="controller_manager",
-        executable="spawner.py",
+        executable="spawner",
         arguments=["position_controller", "-c", "/controller_manager"],
     )
 
     velocity_controller_spawner = Node(
         package="controller_manager",
-        executable="spawner.py",
+        executable="spawner",
         arguments=["velocity_controller", "-c", "/controller_manager"],
     )
 
@@ -57,12 +57,12 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        RegisterEventHandler(
-            event_handler=OnProcessExit(
-                target_action=velocity_controller_spawner,
-                on_exit=[ackermann_controller],
-            )
-        ),
+        # RegisterEventHandler(
+        #     event_handler=OnProcessExit(
+        #         target_action=velocity_controller_spawner,
+        #         on_exit=[ackermann_controller],
+        #     )
+        # ),
 
         RegisterEventHandler(
             event_handler=OnProcessExit(

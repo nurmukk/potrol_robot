@@ -24,6 +24,50 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(ament_cmake REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(sdf REQUIRED)
+# find_package(vox_nav_msgs REQUIRED)
+# find_package(pcl_ros REQUIRED)
+
+add_library(${PROJECT_NAME} SHARED
+  src/botanbot_ackermann_drive.cpp
+)
+
+set(dependencies
+    gazebo_ros
+    geometry_msgs
+    nav_msgs
+    rclcpp
+    sensor_msgs
+    tf2
+    # vox_nav_msgs
+    # pcl_ros
+    )
+
+
+ament_target_dependencies(${PROJECT_NAME}
+  rclcpp
+  gazebo_ros
+  geometry_msgs
+  nav_msgs
+  std_msgs
+  tf2_ros
+  sdf
+)
+
+install(TARGETS ${PROJECT_NAME}
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
